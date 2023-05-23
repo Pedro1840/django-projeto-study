@@ -35,7 +35,7 @@
     --color-gray-8: #323232;
     --color-gray-9: #191919;
 
-    --font-primary: sans-serif;
+    --font-primary: Arial;
     --font-headings: 'Roboto Slab', serif;
 
     --spacing-gutter-medium: 3rem;
@@ -101,7 +101,7 @@ h6 {
     transition: all 300ms ease-in-out;
 }
 
-.search-input,
+.search-input
 .search-button {
     border: none;
     background: none;
@@ -162,6 +162,7 @@ h6 {
 
 .recipe-list-item {
     max-width: 64rem;
+    height: max-content;
 }
 
 .recipe-list-item:hover {
@@ -202,6 +203,7 @@ h6 {
     display: flex;
     flex-flow: row wrap;
     padding: var(--spacing-gutter-medium);
+    padding-left: 20%;
     background: var(--color-gray-1);
 }
 
@@ -213,7 +215,11 @@ h6 {
 }
 
 .recipe-meta-title {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+}
+
+.recipe-meta-text{
+    padding-left: 5%;
 }
 
 .recipe-footer a {
@@ -236,6 +242,16 @@ h6 {
 
 .recipe-footer a:hover {
     filter: brightness(1.5);
+}
+
+.main-content-detail .recipe-list-item {
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.main-content-detail .recipe-list-item:hover {
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
 }
 
 .main-footer {
