@@ -221,6 +221,16 @@ h6 {
     padding: var(--spacing-gutter-medium);
 }
 
+.title-preparation-steps {
+    font-size: 1.1rem;
+    font-family: var(--font-headings);
+}
+
+.content-preparation-steps {
+    background: var(--color-gray-8);
+    color: var(--color-gray-0)
+}
+
 .recipe-footer a {
     background: var(--color-primary-dark);
     display: block;
