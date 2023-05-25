@@ -21,11 +21,11 @@ class Recipe(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
     cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/')
-    caregory = models.ForeignKey(
-        Category, on_delete=models.SET_NULL, null=True)
-    author = models.ForeignKey(
+    category = models.ForeignKey(
+        Category, on_delete=models.SET_NULL, null=True, blank=True, default=None)
+    author=models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True
     )
 
     def __str__(self) -> str:
-        return self.name
+        return self.title

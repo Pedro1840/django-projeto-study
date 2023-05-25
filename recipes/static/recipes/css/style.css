@@ -155,8 +155,9 @@ h6 {
 }
 
 .recipe img {
+    width: 50rem;
+    height: 30rem;
     max-width: 100%;
-    
 }
 
 .recipe-list-item {
@@ -293,4 +294,18 @@ h6 {
 
 .main-footer a:hover {
     filter: brightness(2);
+}
+
+/* Generics */
+
+.center {
+    text-align: center;
+}
+
+.m-x {
+    margin: 0 var(--spacing-gutter-medium);
+}
+
+.m-y {
+    margin: var(--spacing-gutter-medium) 0;
 }
