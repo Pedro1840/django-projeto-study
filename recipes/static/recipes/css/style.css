@@ -77,15 +77,16 @@ h6 {
 }
 
 .main-logo {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: var(--color-white);
     text-decoration: none;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: fit-content;
-    margin: 0 auto;
+    height: 1px;
+    margin: 10;
 }
 
 .main-logo-icon {
@@ -154,10 +155,8 @@ h6 {
     overflow: hidden;
 }
 
-.recipe img {
-    width: 50rem;
-    height: 30rem;
-    max-width: 100%;
+.recipe-cover img {
+    width: 100%;
 }
 
 .recipe-list-item {
